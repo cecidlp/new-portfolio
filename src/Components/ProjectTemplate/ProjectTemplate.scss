@@ -1,0 +1,113 @@
+.project {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 100%;
+    padding: 10px;
+    gap: 20px;
+    scroll-snap-align: center;
+
+
+    .project-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1;
+        height: 100%;
+        font-family: 'Raleway';
+
+        .project-name {
+            font-size: 20px;
+        }
+
+        .project-desc {
+            font-size: 16px;
+            color: var(--clr-i);
+            font-family: 'Roboto';
+        }
+
+        .tags {
+            margin-top: 90px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .tech-stack {
+                font-size: 18px;
+            }
+
+            .tags-wrapper {
+                display: flex;
+                gap: 5px;
+                flex-wrap: wrap;
+
+                .tag {
+                    padding: 0 15px;
+                    border-radius: 8px;
+                    height: 35px;
+                    background: linear-gradient(var(--clr-i), var(--clr-ii));
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    .title {
+                        font-weight: normal;
+                        font-size: 17px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .project-image{
+        display: flex;
+        flex: 2;
+        aspect-ratio: 4/3;
+        border-radius: 10px;
+        background-color: rebeccapurple;
+        cursor: pointer;
+        overflow: hidden;
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+    }
+}
+
+@media (max-width: 600px) {
+    .project {
+      flex-direction: column;
+      padding: 0;
+  
+      .project-details {
+        width: 100%;
+        align-items: center;
+  
+        .tags {
+          margin-top: 40px;
+          align-items: center;
+  
+          .tags-wrapper {
+            justify-content: space-between;
+  
+            .tag {
+              border-radius: 100px;
+            }
+          }
+        }
+      }
+  
+      .project-images {
+        width: 100%;
+  
+        .img {
+          aspect-ratio: 2/2;
+        }
+      }
+    }
+  }

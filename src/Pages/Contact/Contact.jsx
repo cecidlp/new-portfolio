@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div className='contact'>
         <h1>Get in touch</h1>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore consequuntur adipisci eveniet, odit laboriosam ex repudiandae neque accusantium nesciunt, porro perspiciatis explicabo reiciendis quisquam provident voluptates vel quam voluptatibus! Corrupti.</span>
+        <span>Thank you for visiting my portfolio website! <br/> I'm always excited to connect with other creators, potential collaborators, or anyone interested in learning more about my work. Whether you have a project in mind, want to discuss a potential opportunity, or just want to say hello, please don't hesitate to reach out.</span>
         <div className="socials">
             <Social logo={github} title="Github" url="https://github.com/cecidlp" />
             <Social logo={linkedin} title="Linkedin" url="https://www.linkedin.com/in/ceciliadelaparra/" />
@@ -20,7 +20,7 @@ const Contact = () => {
 
         <footer>
             <span>
-                Thank you for visiting my website! <br /> <br /> Hope to hearing from you soon!
+              Let's chat and explore how we can work together to bring your ideas to life!
             </span>
         </footer>
     </div>
